@@ -15,7 +15,7 @@ function getCompChoice(){
 }
 
 function win(){
-
+    usercore++;
 }
 
 function lose(){
@@ -23,7 +23,7 @@ function lose(){
 }
 
 function draw(){
-    
+
 }
 
 function game(userChoice){
