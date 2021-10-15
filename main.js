@@ -14,6 +14,18 @@ function getCompChoice(){
     return choices[randomNumber];
 }
 
+function win(){
+
+}
+
+function lose(){
+
+}
+
+function draw(){
+    
+}
+
 function game(userChoice){
     const compChoice = getCompChoice();
     console.log("user choice =>"+userChoice);
@@ -22,16 +34,19 @@ function game(userChoice){
         case"pr":
         case"sp":
         case"rs":
+        win();
             console.log("User Win");
         break;
         case"rp":
         case"ps":
         case"sr":
+        lose();
             console.log("Computer Win");
         break;
         case"ss":
         case"rr":
         case"pp":
+        draw();
             console.log("Draw");
         break;
     }
