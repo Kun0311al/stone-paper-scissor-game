@@ -50,6 +50,7 @@ header{
     text-align: center;
 }
 .choice{
+    background-color: white;
     border: 4px solid white;
     border-radius: 50%;
     padding: 20px;
