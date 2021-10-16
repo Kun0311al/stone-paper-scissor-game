@@ -1,7 +1,7 @@
-const usercore = 0;
-const compScore = 0;
-const userScore_span = document.getElementById("User-score");
-const compScore_span = document.getElementById("Comp-score");
+let userScore = 0;
+let compScore = 0;
+let userScore_span = document.getElementById("user-score");
+let compScore_span = document.getElementById("Comp-score");
 const scoreBoard_div = document.querySelector(".score-board");
 const result_div = document.querySelector(".result");
 const rock_div = document.getElementById("r");
@@ -15,11 +15,17 @@ function getCompChoice(){
 }
 
 function win(){
-    usercore++;
+    userScore++;
+    console.log(userScore);
+    userScore_span.innerHTML = userScore;
+    compScore_span.innerHTML = compScore;
 }
 
 function lose(){
-
+    compScore++;
+    console.log(compScore);
+    compScore_span.innerHTML=compScore;
+    userScore_span.innerHTML = userScore;
 }
 
 function draw(){
