@@ -60,7 +60,6 @@ header{
 }
 .choice:hover{
     cursor: pointer;
-    background-color: whitesmoke;
 }
 #action-message{
     text-align: center;
