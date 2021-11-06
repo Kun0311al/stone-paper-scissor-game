@@ -20,30 +20,39 @@ function result(bothChoice){
     switch(bothChoice){
         case"pr":
         result_div.innerHTML = "your choice is (paper) and computer choice is (rock)..YOU WIN..!!";
+        console.log("your choice is (paper) and computer choice is (rock)..YOU WIN..!!")
         break;
         case"sp":
         result_div.innerHTML= "your choice is (scissor) and computer choice is (paper)..YOU WIN..!!";
+        console.log("your choice is (scissor) and computer choice is (paper)..YOU WIN..!!")
         break;
         case"rs":
         result_div.innerHTML= "your choice is (rock) and computer choice is (scissor)..YOU WIN..!!";
+        console.log("your choice is (rock) and computer choice is (scissor)..YOU WIN..!!")
         break;
         case"rp":
         result_div.innerHTML= "your choice is (rock) and computer choice is (paper)..COMP WIN..!!";
+        console.log("your choice is (rock) and computer choice is (paper)..COMP WIN..!!")
         break;
         case"ps":
         result_div.innerHTML= "your choice is (paper) and computer choice is (scissor)..COMP WIN..!!";
+        console.log("your choice is (paper) and computer choice is (scissor)..COMP WIN..!!")
         break;
         case"sr":
         result_div.innerHTML= "your choice is (scissor) and computer choice is (rock)..COMP WIN..!!";
+        console.log("your choice is (scissor) and computer choice is (rock)..COMP WIN..!!")
         break;
         case"rr":
         result_div.innerHTML= "your choice is (rock) and computer choice is (rock)..DRAWWW..!!";
+        console.log("your choice is (rock) and computer choice is (rock)..DRAWWW..!!")
         break;
         case"pp":
         result_div.innerHTML= "your choice is (paper) and computer choice is (paper)..DRAWWW..!!";
+        console.log("your choice is (paper) and computer choice is (paper)..DRAWWW..!!")
         break;
         case"ss":
         result_div.innerHTML= "your choice is (scissor) and computer choice is (scissor)..DRAWWW..!!";
+        console.log("your choice is (scissor) and computer choice is (scissor)..DRAWWW..!!")
         break;
     }
 }
@@ -75,31 +84,49 @@ function game(userChoice){
     switch(userChoice+compChoice){
         case"pr":
         result("pr");
+        win();
+        console.log("User Win");
+            break;
         case"sp":
         result("sp");
+        win();
+        console.log("User Win");
+            break;
         case"rs":
         result("rs");
         win();
             console.log("User Win");
-        break;
+            break;
         case"rp":
         result("rp");
+        lose();
+        console.log("Computer Win");
+            break;
         case"ps":
         result("ps");
+        lose();
+        console.log("Computer Win");
+            break;
         case"sr":
         result("sr");
         lose();
             console.log("Computer Win");
-        break;
+            break;
         case"ss":
         result("ss");
+        draw();
+        console.log("Draw");
+            break;
         case"rr":
         result("rr");
+        draw();
+        console.log("Draw");
+            break;
         case"pp":
         result("pp");
         draw();
             console.log("Draw");
-        break;
+            break;
     }
 }
 
